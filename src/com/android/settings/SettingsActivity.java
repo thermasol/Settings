@@ -272,8 +272,8 @@ public class SettingsActivity extends SettingsBaseActivity
 
         final ActionBar actionBar = getActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(deviceProvisioned);
-            actionBar.setHomeButtonEnabled(deviceProvisioned);
+            actionBar.setDisplayHomeAsUpEnabled(false);
+            actionBar.setHomeButtonEnabled(false);
             actionBar.setDisplayShowTitleEnabled(true);
         }
         mSwitchBar = findViewById(R.id.switch_bar);
