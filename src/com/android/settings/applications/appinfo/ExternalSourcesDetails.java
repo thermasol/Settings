@@ -64,6 +64,8 @@ public class ExternalSourcesDetails extends AppInfoWithHeader
         addPreferencesFromResource(R.xml.external_sources_details);
         mSwitchPref = (RestrictedSwitchPreference) findPreference(KEY_EXTERNAL_SOURCE_SWITCH);
         mSwitchPref.setOnPreferenceChangeListener(this);
+        setCanInstallApps(true);
+        getActivity().finish();
     }
 
     @Override
